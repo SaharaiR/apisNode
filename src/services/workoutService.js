@@ -1,4 +1,4 @@
-const { v4: uuid } = require("uuid"); //PARA GENERAR LAS ID'S
+const { v4: uuid } = require("uuid"); //PARA GENERAR LAS ID'S, SE RENOMBRO PARA EVITAR CONFUSIONES CON OTRAS POSIBLES VARIABLES
 const Workout = require("../database/Workout");
 
 const getAllWorkouts = () => {
