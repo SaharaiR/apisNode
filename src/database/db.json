@@ -2,8 +2,8 @@
   "workouts": [
     {
       "id": "61dbae02-c147-4e28-863c-db7bd402b2d6",
-      "name": "Tommy V",
-      "mode": "For Time",
+      "name": "Buster Core",
+      "mode": "20 AMRAP",
       "equipment": [
         "barbell",
         "rope"
@@ -22,7 +22,8 @@
         "Split the 21 thrusters as needed",
         "Try to do the 9 and 6 thrusters unbroken",
         "RX Weights: 115lb/75lb"
-      ]
+      ],
+      "updateAt": "10/16/2024, 6:53:28 PM"
     },
     {
       "id": "4a3d9aaa-608c-49a7-a004-66305ad4ab50",
