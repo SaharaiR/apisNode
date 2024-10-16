@@ -40,9 +40,19 @@ const updateOneWorkout = (workoutId, changes) => {
     return updatedWorkout;
 }
 
+const deleteOneWorkout = (workoutId) => {
+    const indexForDeleted = DB.workouts.findIndex( (workout) => workout.id === workout.id )
+    if(indexForDeleted === -1){
+        return
+    }
+    DB.workouts.splice(indexForDeleted, 1);
+    saveToDB(DB);
+}
+
 module.exports = {
     getAllWorkouts,
     getOneWorkout,
     createNewWorkout,
-    updateOneWorkout
+    updateOneWorkout,
+    deleteOneWorkout
 }
