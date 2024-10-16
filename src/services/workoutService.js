@@ -1,0 +1,34 @@
+const { v4: uuid } = require("uuid"); //PARA GENERAR LAS ID'S
+const Workout = require("../database/Workout");
+
+const getAllWorkouts = () => {
+    const allWorkouts = Workout.getAllWorkouts();
+    return allWorkouts
+}
+const getOneWorkout = () => {
+    return;
+}
+const createNewWorkout = (newWorkout) => {
+    const workoutToInsert = {
+        ...newWorkout,
+        id: uuid(),
+        createdAt: new Date().toLocaleString("en-US", { timeZone: "UTC" }),
+        updateAt: new Date().toLocaleString("en-US", { timeZone: "UTC" })
+    }
+    const createWorkout = Workout.createNewWorkout(workoutToInsert);
+    return  createWorkout
+}
+const updateOneWorkout = () => {
+    return;
+}
+const deleteOneWorkout = () => {
+    return;
+}
+
+module.exports = {
+    getAllWorkouts,
+    getOneWorkout,
+    createNewWorkout,
+    updateOneWorkout,
+    deleteOneWorkout
+}
